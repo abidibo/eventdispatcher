@@ -1,5 +1,5 @@
 {
-  "name": "eventdispatcher",
+  "name": "js-event-dispatcher",
   "version": "0.1.0",
   "description": "A javascript event dispatcher which implements the mediator pattern",
   "main": "index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abidibo/eventdispatcher.git"
+    "url": "git+https://github.com/abidibo/js-event-dispatcher.git"
   },
   "keywords": [
     "dispatcher",
@@ -28,9 +28,9 @@
   "author": "abidibo <abidibo@gmail.com> (https://www.abidibo.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abidibo/eventdispatcher/issues"
+    "url": "https://github.com/abidibo/js-event-dispatcher/issues"
   },
-  "homepage": "https://github.com/abidibo/eventdispatcher#readme",
+  "homepage": "https://github.com/abidibo/js-event-dispatcher#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",

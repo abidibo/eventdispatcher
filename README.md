@@ -1,4 +1,4 @@
-# EventDispatcher
+# js-event-dispatcher
 
 [![Build Status](https://travis-ci.org/abidibo/eventdispatcher.svg?branch=master)](https://travis-ci.org/abidibo/eventdispatcher)
 [![Coverage Status](https://coveralls.io/repos/github/abidibo/eventdispatcher/badge.svg)](https://coveralls.io/github/abidibo/eventdispatcher)
@@ -12,7 +12,7 @@ A simple js event dispatcher which implements the mediator pattern
 ## Usage
 
 ```js
-    import EventDispatcher from 'eventdispatcher'
+    import EventDispatcher from 'js-event-dispatcher'
 
     let mycb = (evtName, param) => console.log(evtName, param)
     EventDispatcher.register('myEvent', mycb)
