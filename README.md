@@ -1,6 +1,6 @@
 # js-event-dispatcher
 
-[![Build Status](https://travis-ci.org/abidibo/eventdispatcher.svg?branch=0.1.0)](https://travis-ci.org/abidibo/eventdispatcher)
+[![Build Status](https://travis-ci.org/abidibo/eventdispatcher.svg?branch=master)](https://travis-ci.org/abidibo/eventdispatcher)
 [![Coverage Status](https://coveralls.io/repos/github/abidibo/eventdispatcher/badge.svg)](https://coveralls.io/github/abidibo/eventdispatcher)
 
 A simple js event dispatcher which implements the mediator pattern
