@@ -1,7 +1,7 @@
 {
   "name": "eventdispatcher",
   "version": "0.1.0",
-  "description": "A javascript event dispatcher developed with the mediator pattern",
+  "description": "A javascript event dispatcher which implements the mediator pattern",
   "main": "index.js",
   "nyc": {
     "check-coverage": true,
