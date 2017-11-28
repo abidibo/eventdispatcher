@@ -22,6 +22,12 @@ A simple js event dispatcher which implements the mediator pattern
     EventDispatcher.unregister('myEvent', mycb)
 ```
 
+For browser usage just add `dist/EventDispatcher.js` in your document, i.e.
+
+    <head>
+        <script src="dist/EventDispatcher.js"></script>
+    </head>
+
 ## Methods
 
 ### register
