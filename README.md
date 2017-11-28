@@ -1,5 +1,6 @@
 # EventDispatcher
 
+[![Build Status](https://travis-ci.org/abidibo/eventdispatcher.svg?branch=master)](https://travis-ci.org/abidibo/eventdispatcher)
 [![Coverage Status](https://coveralls.io/repos/github/abidibo/eventdispatcher/badge.svg)](https://coveralls.io/github/abidibo/eventdispatcher)
 
 A simple js event dispatcher written following the mediator pattern
