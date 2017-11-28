@@ -14,8 +14,8 @@
     "compile": "./node_modules/.bin/babel --presets es2015 -d dist/ src/",
     "prepublish": "npm run compile",
     "test": "NODE_ENV=test && npm run compile && nyc ./node_modules/.bin/mocha --compilers js:babel-core/register",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "coverage-html": "nyc report --reporter=html"
+    "coverage": "npm run test && nyc report --reporter=text-lcov | coveralls",
+    "coverage-html": "npm run test && nyc report --reporter=html"
   },
   "repository": {
     "type": "git",
