@@ -1,5 +1,7 @@
 # EventDispatcher
 
+[![Coverage Status](https://coveralls.io/repos/github/abidibo/eventdispatcher/badge.svg)](https://coveralls.io/github/abidibo/eventdispatcher)
+
 A simple js event dispatcher written following the mediator pattern
 
 ## Install
