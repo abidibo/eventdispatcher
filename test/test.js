@@ -59,7 +59,8 @@ describe('EventDispatcher', function () {
   })
 
   describe('emit()', function () {
-    let value, value2, eventName, eventName2, param, param2, myfunc, myfunc2
+    let value, value2, eventName, eventName2
+    let param, param2, param3, myfunc, myfunc2
 
     beforeEach(() => {
       EventDispatcher.unregister('emit')
@@ -69,8 +70,9 @@ describe('EventDispatcher', function () {
       eventName2 = null
       param = null
       param2 = null
+      param3 = null
       myfunc = (e, p) => { value = 2; eventName = e; param = p }
-      myfunc2 = (e, p) => { value2 = 2; eventName2 = e; param2 = p }
+      myfunc2 = (e, p, pp) => { value2 = 2; eventName2 = e; param2 = p; param3 = pp }
       EventDispatcher.register('emit', myfunc)
       EventDispatcher.register('emit', myfunc2)
     })
@@ -90,9 +92,10 @@ describe('EventDispatcher', function () {
     it('should pass the right params to the regitered callbacks', function () {
       assert.equal(param, null)
       assert.equal(param2, null)
-      EventDispatcher.emit('emit', 'lol')
+      EventDispatcher.emit('emit', 'lol', 'foo')
       assert.equal(param, 'lol')
       assert.equal(param2, 'lol')
+      assert.equal(param3, 'foo')
     })
 
     it('should not call regitered callbacks if event is different ', function () {

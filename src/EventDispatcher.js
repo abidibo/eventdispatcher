@@ -60,14 +60,14 @@ const EventDispatcher = {
    * @param {String} evtName name of the event
    * @param {Mixed} params additional parameters passed to the callback
    */
-  emit: function (evtName, params) {
+  emit: function (evtName, ...params) {
     var _evtName = this.evtName(evtName)
     if (typeof this._listeners[_evtName] !== 'undefined') {
       for (var i = 0, l = this._listeners[_evtName].length; i < l; i++) {
         this._listeners[_evtName][i][1].call(
           this._listeners[_evtName][i][0],
           evtName,
-          params
+          ...params
         )
       }
     }

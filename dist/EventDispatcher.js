@@ -65,11 +65,17 @@ var EventDispatcher = {
    * @param {String} evtName name of the event
    * @param {Mixed} params additional parameters passed to the callback
    */
-  emit: function emit(evtName, params) {
+  emit: function emit(evtName) {
     var _evtName = this.evtName(evtName);
     if (typeof this._listeners[_evtName] !== 'undefined') {
+      for (var _len = arguments.length, params = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        params[_key - 1] = arguments[_key];
+      }
+
       for (var i = 0, l = this._listeners[_evtName].length; i < l; i++) {
-        this._listeners[_evtName][i][1].call(this._listeners[_evtName][i][0], evtName, params);
+        var _listeners$_evtName$i;
+
+        (_listeners$_evtName$i = this._listeners[_evtName][i][1]).call.apply(_listeners$_evtName$i, [this._listeners[_evtName][i][0], evtName].concat(params));
       }
     }
   }
