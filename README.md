@@ -28,6 +28,7 @@ Registers a function to an event
     register(evtName, callback, bind?)
 
 | Param | Type | Description |
+|-------|------|-------------|
 | evtName | String | just the event name |
 | callback | Function | callback called when the evtName is emitted |
 | bind | Object | The object to which will point this keyword inside the callback, if empty callback will binded to EventDispatcher object |
@@ -45,6 +46,7 @@ Unregisters all functions from an event, or just the given one
     unregister(evtName, callback?)
 
 | Param | Type | Description |
+|-------|------|-------------|
 | evtName | String | the event name |
 | callback | Function | if given only that callback will be unregistered |
 
@@ -55,6 +57,7 @@ Emits an event
     emit(evtvName, params?)
 
 | Param | Type | Description |
+|-------|------|-------------|
 | evtName | String | the event name |
 | params | Mixed | other parameters that will be passed to the registered callbacks |
 
